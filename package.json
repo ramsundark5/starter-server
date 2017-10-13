@@ -17,6 +17,8 @@
     "*.{js,json,css}": ["prettier --write", "git add"]
   },
   "scripts": {
+    "deploy":
+      "gcloud beta functions deploy app --stage-bucket ram-starter-kit --trigger-http",
     "precommit": "lint-staged"
   }
 }

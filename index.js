@@ -1,5 +1,5 @@
 //const cors = require("cors")
-const express = require("express")
+const express = require("express");
 const app = express();
 /**
  * HTTP Cloud Function.
@@ -7,8 +7,8 @@ const app = express();
  * @param {Object} req Cloud Function request context.
  * @param {Object} res Cloud Function response context.
  */
-app.get('/messages', (req, res) =>  {
-    res.send('Hello World changed again!');
-})
+app.get("/messages", (req, res) => {
+  res.send("Hello World changed from git!");
+});
 
 exports.app = app;
