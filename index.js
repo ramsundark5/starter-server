@@ -8,7 +8,7 @@ const app = express();
  * @param {Object} res Cloud Function response context.
  */
 app.get("/messages", (req, res) => {
-  res.send("Hello World changed from git!");
+  res.send("Hello World changed from git again!");
 });
 
 exports.app = app;
